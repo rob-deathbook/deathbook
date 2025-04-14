@@ -52,23 +52,26 @@
   font-size: 1rem;
   background-color: #111;
   color: white;
-  border: 1px solid white;
-  border-radius: 8px;
+  border: 1px solid #444;
+  border-radius: 8px 0 0 8px;
 }
+
 
     input::placeholder {
       color: #777;
     }
     button {
-      width: 100%;
-      padding: 16px;
-      font-size: 1rem;
-      background-color: #111;
-      color: white;
-      border: 1px solid white;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+  padding: 16px 24px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
     button:hover {
       background-color: #222;
     }
@@ -91,7 +94,7 @@
   <form id="waitlist-form">
     <div class="form-row">
   <input type="email" name="email" placeholder="Enter your email" required />
-  <button type="submit">Join</button>
+  <button type="submit">Join Waitlist</button>
 </div>
   </form>
 
