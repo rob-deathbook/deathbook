@@ -20,51 +20,53 @@
       text-align: center;
     }
     .logo {
-      width: 180px;
+      max-width: 260px; width: 100%;
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     .headline {
-      font-size: 1.6rem;
+      font-size: 1.75rem;
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
     .subhead {
       font-size: 1rem;
       color: #ccc;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     form {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-      max-width: 400px;
+      max-width: 420px;
       width: 100%;
+      padding: 0 20px;
     }
     input[type="email"] {
       width: 100%;
-      padding: 14px;
+      padding: 16px;
       border-radius: 6px;
       border: none;
-      margin-bottom: 20px;
       font-size: 1rem;
+      background-color: #111;
+      color: white;
+      margin-bottom: 16px;
+    }
+    input::placeholder {
+      color: #888;
     }
     button {
       width: 100%;
-      padding: 14px;
+      padding: 16px;
       font-size: 1rem;
-      background-color: #546fff;
+      background-color: #111;
       color: white;
-      border: none;
+      border: 1px solid white;
       border-radius: 6px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #3e58dd;
+      background-color: #222;
     }
     .investor-link {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 0.9rem;
       color: #aaa;
     }
