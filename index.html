@@ -2,76 +2,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeathBook – Coming Soon</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom, #0c0f1a 0%, #1a1e2d 100%), url('https://www.transparenttextures.com/patterns/stardust.png');
-            background-size: cover;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
-        }
-        .logo {
-            margin-top: 20px;
-            width: 140px;
-            height: auto;
-        }
-        .headline {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin: 40px 0 10px;
-            text-align: center;
-        }
-        .subhead {
-            font-size: 1rem;
-            margin-bottom: 40px;
-            color: #ccc;
-            text-align: center;
-        }
-        .form-container {
-            width: 100%;
-            max-width: 640px;
-            background: #1f2436;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        }
-        iframe {
-            width: 100%;
-            height: 480px;
-            border: none;
-        }
-        .investor {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #aaa;
-        }
-        .investor a {
-            color: #aaa;
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeathBook – Coming Soon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #0c0f1a, #1a1e2d);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .logo {
+      margin-top: 20px;
+      width: 200px;
+      height: auto;
+    }
+    .headline {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 40px 0 10px;
+      text-align: center;
+    }
+    .subhead {
+      font-size: 1rem;
+      margin-bottom: 40px;
+      color: #ccc;
+      text-align: center;
+    }
+    form {
+      background: #1f2436;
+      padding: 24px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background: #4a5cff;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3e4be4;
+    }
+    .investor {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .investor a {
+      color: #aaa;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo">
-    <div class="headline">A platform built on trust, security, intelligence, and empathy.</div>
-    <div class="subhead">We’re building. Join the early list.</div>
+  <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
+  <div class="headline">A platform built on trust, security, intelligence, and empathy.</div>
+  <div class="subhead">We’re building. Join the early list.</div>
 
-    <div class="form-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScN9rvt5nSPi7Y_6JwWtVSg9j6654OPILiVT3zKFAdVJ1zalQ/viewform?embedded=true">Loading…</iframe>
-    </div>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="email" name="email" placeholder="Enter your email address" required />
+    <button type="submit">Join Waitlist</button>
+  </form>
 
-    <div class="investor">
-        Investor? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWx-wAk4MeSjc69agm2rGjvAcp_O4iLDbpaKcfnMZc415R_w/viewform" target="_blank">Connect with us here.</a>
-    </div>
+  <div class="investor">
+    Investor? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWx-wAk4MeSjc69agm2rGjvAcp_O4iLDbpaKcfnMZc415R_w/viewform" target="_blank">Connect with us here.</a>
+  </div>
 </body>
 </html>
