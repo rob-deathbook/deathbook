@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeathBook – Coming Soon</title>
+  <title>Investor Inquiry – DeathBook</title>
   <style>
     body {
       margin: 0;
@@ -20,25 +20,24 @@
       margin-bottom: 30px;
     }
     .headline {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 10px;
     }
-    .subhead {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 40px;
-    }
     form {
-      max-width: 400px;
-      margin: 0 auto 40px auto;
+      max-width: 500px;
+      margin: 0 auto;
     }
-    input[type="email"] {
+    input, textarea {
       width: 100%;
       padding: 14px;
       border-radius: 6px;
       border: none;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
     }
     button {
       width: 100%;
@@ -53,12 +52,12 @@
     button:hover {
       background-color: #3e58dd;
     }
-    .investor-link {
+    .back {
+      margin-top: 20px;
       font-size: 0.9rem;
       color: #aaa;
-      text-align: center;
     }
-    .investor-link a {
+    .back a {
       color: #aaa;
       text-decoration: underline;
     }
@@ -66,16 +65,17 @@
 </head>
 <body>
   <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
-  <div class="headline">A platform built on trust, security, intelligence, and empathy.</div>
-  <div class="subhead">We’re building. Join the early list.</div>
+  <div class="headline">Investor Inquiry</div>
 
-  <form action="https://formspree.io/f/mnqezgjq" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Join Waitlist</button>
+  <form action="https://formspree.io/f/xnqepgqa" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Inquiry</button>
   </form>
 
-  <div class="investor-link">
-    Investor? <a href="investor.html">Connect with us here</a>
+  <div class="back">
+    <a href="index.html">← Back to Waitlist</a>
   </div>
 </body>
 </html>
