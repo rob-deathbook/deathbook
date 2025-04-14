@@ -8,20 +8,26 @@
   <style>
     body {
       margin: 0;
-      padding: 60px 20px;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #000;
-      color: #fff;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
     }
     .logo {
-      width: 200px;
+      width: 180px;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     .headline {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 12px;
     }
     .subhead {
       font-size: 1rem;
@@ -29,23 +35,27 @@
       margin-bottom: 40px;
     }
     form {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
       max-width: 400px;
-      margin: 0 auto 40px auto;
+      width: 100%;
     }
     input[type="email"] {
       width: 100%;
       padding: 14px;
       border-radius: 6px;
       border: none;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       font-size: 1rem;
     }
     button {
       width: 100%;
       padding: 14px;
+      font-size: 1rem;
       background-color: #546fff;
       color: white;
-      font-size: 1rem;
       border: none;
       border-radius: 6px;
       cursor: pointer;
@@ -54,9 +64,9 @@
       background-color: #3e58dd;
     }
     .investor-link {
+      margin-top: 40px;
       font-size: 0.9rem;
       color: #aaa;
-      text-align: center;
     }
     .investor-link a {
       color: #aaa;
