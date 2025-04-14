@@ -6,85 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeathBook – Coming Soon</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-    * { box-sizing: border-box; }
     body {
       margin: 0;
       padding: 60px 20px;
-      font-family: 'Inter', sans-serif;
-      background: url('https://images.unsplash.com/photo-1609840112329-06d6c1f2849f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
     }
     .logo {
-      width: 220px;
+      width: 200px;
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .headline {
-      font-size: 1.75rem;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 12px;
-      max-width: 600px;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
     }
     .subhead {
       font-size: 1rem;
-      font-weight: 400;
       color: #ccc;
-      text-align: center;
-      margin-bottom: 50px;
-      max-width: 600px;
+      margin-bottom: 40px;
     }
-    form {
-      background-color: rgba(30, 36, 51, 0.92);
-      padding: 28px;
-      border-radius: 12px;
-      max-width: 420px;
-      width: 100%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    .form-container {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
     }
-    input[type="email"] {
-      padding: 14px;
-      font-size: 1rem;
-      border-radius: 6px;
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 480px;
       border: none;
-      margin-bottom: 20px;
-    }
-    button {
-      padding: 14px;
-      font-size: 1rem;
-      background-color: #546fff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background-color: #3e58dd;
-    }
-    .investor {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #aaa;
-      text-align: center;
-    }
-    .investor a {
-      color: #aaa;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 500px) {
-      .headline { font-size: 1.4rem; }
-      .subhead { font-size: 0.95rem; }
+      border-radius: 10px;
+      background-color: #fff;
     }
   </style>
 </head>
@@ -93,13 +47,8 @@
   <div class="headline">A platform built on trust, security, intelligence, and empathy.</div>
   <div class="subhead">We’re building. Join the early list.</div>
 
-  <form action="https://formspree.io/f/mnqezgjq" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Join Waitlist</button>
-  </form>
-
-  <div class="investor">
-    Investor? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWx-wAk4MeSjc69agm2rGjvAcp_O4iLDbpaKcfnMZc415R_w/viewform" target="_blank">Connect with us here.</a>
+  <div class="form-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScN9rvt5nSPi7Y_6JwWtVSg9j6654OPILiVT3zKFAdVJ1zalQ/viewform?embedded=true">Loading…</iframe>
   </div>
 </body>
 </html>
