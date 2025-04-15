@@ -14,10 +14,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;
   min-height: 100vh;
   text-align: center;
 }
@@ -158,21 +155,38 @@ textarea:-webkit-autofill {
   text-align: center;
   padding-bottom: 60px;
 }
+    .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-top: 80px;
+}
+@media (max-width: 480px) {
+  .main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
   </style>
 </head>
 <body>
+  <div class="main-content">
   <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
   <div class="headline">Investor Inquiry</div>
-<p class="intro">
-  We’re raising a pre-seed round for a bold, AI-first platform that’s creating a new category in an overlooked but massive market. If you’re an early-stage investor drawn to ambitious ideas in stealth, we’d love to share our pitch deck and set up a call.
-</p>
-
+  <p class="intro">
+    We’re raising a pre-seed round for a bold, AI-first platform that’s creating a new category in an overlooked but massive market. If you’re an early-stage investor drawn to ambitious ideas in stealth, we’d love to share our pitch deck and set up a call.
+  </p>
   <form action="https://formspree.io/f/xnqepgqa" method="POST">
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Inquiry</button>
   </form>
+</div>
+
 
 <footer class="footer">
   <div class="investor-link">
