@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Investor Inquiry – DeathBook</title>
   <style>
-   body {
+  body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -14,10 +14,13 @@
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  display: block;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
     .logo {
       max-width: 260px; width: 100%;
       height: auto;
@@ -169,10 +172,19 @@ textarea:-webkit-autofill {
     padding-right: 20px;
   }
 }
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-top: 80px;
+}
 
   </style>
 </head>
 <body>
+  <div class="main-content">
   <div class="main-content">
   <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
   <div class="headline">Investor Inquiry</div>
@@ -185,6 +197,8 @@ textarea:-webkit-autofill {
     <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Inquiry</button>
   </form>
+</div>
+
 </div>
 
 
