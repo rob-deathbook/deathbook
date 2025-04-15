@@ -35,15 +35,15 @@
       padding: 0 20px;
     }
     input, textarea {
-      width: 100%;
-      padding: 16px;
-      border-radius: 6px;
-      border: none;
-      font-size: 1rem;
-      background-color: #111;
-      color: white;
-      margin-bottom: 16px;
-    }
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  font-size: 1rem;
+  background-color: #111;
+  color: white;
+  margin-bottom: 16px;
+}
     input::placeholder,
     textarea::placeholder {
       color: #888;
@@ -52,6 +52,11 @@
       resize: vertical;
       height: 120px;
     }
+    input:focus,
+textarea:focus {
+  border: 1px solid #666;
+  outline: none;
+}
     button {
       width: 100%;
       padding: 16px;
@@ -63,8 +68,9 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #222;
-    }
+  background-color: #1a1a1a;
+  border-color: white;
+}
     .back {
       margin-top: 40px;
       font-size: 0.9rem;
@@ -96,6 +102,12 @@
   color: #ccc;
   line-height: 1.6;
   text-align: left;
+}
+    input:-webkit-autofill,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #111 inset !important;
+  -webkit-text-fill-color: white !important;
+  border: 1px solid #333 !important;
 }
   </style>
 </head>
