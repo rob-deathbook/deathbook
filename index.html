@@ -140,12 +140,12 @@ input:-webkit-autofill {
   flex-grow: 1;
   padding-top: 80px;
 }
-    @media (max-width: 480px) {
+  @media (max-width: 480px) {
   .main-content {
     padding-left: 20px;
     padding-right: 20px;
   }
-@media (max-width: 480px) {
+
   .logo {
     padding-top: 10px;
     margin-bottom: 30px;
@@ -154,7 +154,14 @@ input:-webkit-autofill {
   .memento {
     margin-top: 40px;
   }
+
+  input[type="email"],
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
+
 
   input[type="email"],
   button {
