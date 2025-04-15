@@ -109,18 +109,15 @@ textarea:-webkit-autofill {
   -webkit-text-fill-color: white !important;
   border: 1px solid #333 !important;
 }
-.footer {
-  width: 100%;
-  padding: 60px 0 30px;
-  text-align: center;
-  margin-top: 80px; /* manually pushes it lower */
+.corner-copyright {
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  font-size: 0.75rem;
+  color: #888;
+  z-index: 1000;
 }
 
-.copyright {
-  font-size: 0.8rem;
-  color: #bbb;
-  text-shadow: 0 0 2px rgba(0,0,0,0.5);
-}
   </style>
 </head>
 <body>
@@ -139,10 +136,8 @@ textarea:-webkit-autofill {
 
   <div class="back">
     <a href="index.html">← Back to Waitlist</a>
- <footer class="footer">
-  <div class="copyright">
-    © 2025 DeathBook, Inc. All rights reserved.
-  </div>
-</footer>
+ <div class="corner-copyright">
+  © 2025 DeathBook, Inc.
+</div>
 </body>
 </html>
