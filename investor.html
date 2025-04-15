@@ -29,13 +29,13 @@
       font-size: 1.6rem;
       margin-bottom: 20px;
     }
-    form {
+   form {
   max-width: 480px;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
 }
+
     input, textarea {
   width: 100%;
   padding: 16px;
@@ -96,15 +96,16 @@ textarea:focus {
     font-size: 1.3rem;
   }
 }
-    .intro {
+   .intro {
   max-width: 480px;
-  margin: 0 20px 30px;
+  margin: 0 auto 30px;
   font-size: 1rem;
   font-weight: 300;
   color: #ccc;
   line-height: 1.6;
   text-align: left;
 }
+
     input:-webkit-autofill,
 textarea:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #111 inset !important;
@@ -120,12 +121,17 @@ textarea:-webkit-autofill {
   z-index: 1000;
 }
 @media (max-width: 480px) {
-  form {
-    padding: 0 16px;
+  form,
+  .intro {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
   }
 
-  .intro {
-    padding: 0 16px;
+  input,
+  textarea,
+  button {
+    box-sizing: border-box;
   }
 }
 
