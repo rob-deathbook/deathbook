@@ -201,6 +201,17 @@ textarea:-webkit-autofill {
 .mc-field-group input::placeholder {
   color: #999;
 }
+.mc-field-group textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 120px;
+}
 
 #mc-embedded-subscribe {
   padding: 16px;
@@ -239,8 +250,8 @@ textarea:-webkit-autofill {
             <input type="text" name="MMERGE5" class="required text" id="mce-MMERGE5" placeholder="Your Full Name" required>
           </div>
           <div class="mc-field-group">
-            <input type="text" name="MMERGE6" class="required text" id="mce-MMERGE6" placeholder="Your Message" required>
-          </div>
+  <textarea name="MMERGE6" class="required" id="mce-MMERGE6" placeholder="Your Message" required></textarea>
+</div>
           <div hidden>
             <input type="hidden" name="tags" value="102374">
           </div>
