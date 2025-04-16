@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investor Confirmation – DeathBook</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('deathbook_background_blue_tint.jpg') no-repeat center bottom fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      padding-top: 80px;
+      width: 100%;
+    }
+
+    .logo {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+
+    .headline {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 60px 0 30px;
+    }
+
+    .investor-link {
+      font-size: 0.9rem;
+      color: #ccc;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      text-align: center;
+      text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    }
+
+    .investor-link a {
+      color: #ccc;
+      text-decoration: none;
+      border-bottom: 1px solid #888;
+    }
+
+    .investor-link a:hover {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    .corner-copyright {
+      position: fixed;
+      bottom: 16px;
+      right: 20px;
+      font-size: 0.75rem;
+      color: #888;
+      z-index: 1000;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px;
+      }
+
+      .logo {
+        max-width: 200px;
+        margin-bottom: 30px;
+      }
+
+      .headline {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
+    <div class="headline">Thanks for reaching out. We'll be in touch soon.</div>
+  </div>
+
+  <footer class="footer">
+    <div class="investor-link">
+      ← <a href="index.html">Back to Waitlist</a>
+    </div>
+  </footer>
+
+  <div class="corner-copyright">
+    © 2025 DeathBook, Inc.
+  </div>
+</body>
+</html>
