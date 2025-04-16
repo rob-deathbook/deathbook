@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waitlist Confirmation – DeathBook</title>
+  <link rel="preload" as="image" href="deathbook_background_blue_tint_compressed.jpg" type="image/jpeg">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('deathbook_background_blue_tint.jpg') no-repeat center bottom fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 860px;
+      width: 100%;
+      height: auto;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .confirmation-message {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: #ddd;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .back-home {
+      font-size: 1rem;
+      color: #ccc;
+      text-decoration: none;
+      border-bottom: 1px solid #888;
+    }
+
+    .back-home:hover {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        padding-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .confirmation-message {
+        font-size: 1.4rem;
+        padding: 0 20px;
+      }
+    }
+
+    .footer {
+      margin-top: auto;
+      padding: 60px 0 30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .corner-copyright {
+      position: fixed;
+      bottom: 16px;
+      right: 20px;
+      font-size: 0.75rem;
+      color: #888;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
+  <div class="confirmation-message">
+    Thank you for joining the DeathBook waitlist. We’ll be in touch as soon as we’re ready.
+  </div>
+  <div class="footer">
+    <a href="index.html" class="back-home">← Back to Homepage</a>
+  </div>
+  <div class="corner-copyright">
+    © 2025 DeathBook, Inc.
+  </div>
+</body>
+</html>
