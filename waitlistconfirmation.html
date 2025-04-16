@@ -28,7 +28,12 @@
   flex-grow: 1;
   padding-top: 20px;
 }
-
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
   .logo {
   max-width: 860px;
   width: 100%;
@@ -115,10 +120,10 @@
 }
 
 
-
   </style>
 </head>
 <body>
+  <div class="page-wrapper">
   <div class="main-content">
     <img src="deathbook_logo_COLOR_light.png" alt="DeathBook Logo" class="logo" />
     <div class="subhead">You're officially on the waitlist.</div>
@@ -134,5 +139,7 @@
   <div class="corner-copyright">
     © 2025 DeathBook, Inc.
   </div>
+</div>
+
 </body>
 </html>
